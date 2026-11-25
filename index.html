@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>s浪校花苏苏的日常 - 校园生活Vlog_记录青春每一天</title>
+<meta name="description" content="s浪校花苏苏的日常，用镜头记录真实校园生活，分享青春故事与成长日常，一个持续更新的校园Vlog视频品牌。">
+<style>
+:root{
+  --pink:#ff6b9d;
+  --pink-soft:#ffd6e7;
+  --peach:#ffe8d6;
+  --mint:#a8e6cf;
+  --lav:#c9b6ff;
+  --cream:#fffafc;
+  --ink:#2e2633;
+  --ink-soft:#6b5f73;
+  --line:rgba(46,38,51,.1);
+  --shadow:0 18px 50px -20px rgba(255,107,157,.45);
+  --radius:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.wrap{width:min(1180px,92vw);margin:0 auto;}
+section{position:relative;}
+
+/* ============ NAV ============ */
+header.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(255,250,252,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-weight:800;font-size:19px;letter-spacing:.5px;
+}
+.logo .dot{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pink),var(--lav));
+  display:grid;place-items:center;color:#fff;font-size:15px;
+  box-shadow:0 6px 18px -6px var(--pink);
+}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap;}
+.nav-links a{
+  padding:8px 14px;border-radius:999px;font-size:14.5px;color:var(--ink-soft);
+  transition:.25s;
+}
+.nav-links a:hover{background:var(--pink-soft);color:var(--ink);}
+.nav-cta{
+  padding:9px 20px;border-radius:999px;font-size:14px;font-weight:700;
+  background:var(--ink);color:#fff;transition:.25s;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px var(--ink);}
+
+/* ============ HERO ============ */
+.hero{
+  padding:70px 0 40px;
+  background:
+    radial-gradient(circle at 14% 12%,rgba(255,107,157,.18),transparent 46%),
+    radial-gradient(circle at 86% 22%,rgba(201,182,255,.22),transparent 46%),
+    linear-gradient(180deg,#fff9fc,#fffafc);
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;
+  background:#fff;border:1px solid var(--pink-soft);color:var(--pink);
+  box-shadow:0 8px 20px -14px var(--pink);
+}
+.eyebrow span.live{width:8px;height:8px;border-radius:50%;background:var(--pink);
+  box-shadow:0 0 0 0 rgba(255,107,157,.7);animation:pulse 1.8s infinite;}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(255,107,157,.6);}
+  70%{box-shadow:0 0 0 12px rgba(255,107,157,0);}
+  100%{box-shadow:0 0 0 0 rgba(255,107,157,0);}
+}
+h1{
+  font-size:clamp(40px,5.4vw,68px);
+  line-height:1.12;letter-spacing:-1px;
+  margin:20px 0 18px;font-weight:900;
+}
+h1 .hl{
+  background:linear-gradient(120deg,var(--pink),var(--lav) 70%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{
+  font-size:17px;color:var(--ink-soft);max-width:520px;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:14px 26px;border-radius:999px;font-size:15px;font-weight:700;
+  transition:.28s;cursor:pointer;border:none;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--pink),#ff8fbe);
+  color:#fff;box-shadow:var(--shadow);
+}
+.btn-primary:hover{transform:translateY(-3px) scale(1.02);}
+.btn-ghost{
+  background:#fff;border:1.5px solid var(--line);color:var(--ink);
+}
+.btn-ghost:hover{border-color:var(--pink);color:var(--pink);transform:translateY(-3px);}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;}
+.hero-stats div{display:flex;flex-direction:column;}
+.hero-stats b{font-size:26px;font-weight:900;letter-spacing:-.5px;}
+.hero-stats s{text-decoration:none;font-size:13px;color:var(--ink-soft);}
+
+/* hero visual */
+.hero-visual{position:relative;height:480px;}
+.phone{
+  position:absolute;right:16px;top:0;width:268px;height:480px;
+  border-radius:38px;background:linear-gradient(160deg,#3a2f42,#1f1a24);
+  padding:10px;box-shadow:0 40px 80px -30px rgba(46,38,51,.55);
+  transform:rotate(4deg);
+  animation:floaty 7s ease-in-out infinite;
+}
+@keyframes floaty{
+  0%,100%{transform:rotate(4deg) translateY(0);}
+  50%{transform:rotate(4deg) translateY(-14px);}
+}
+.phone-screen{
+  width:100%;height:100%;border-radius:30px;overflow:hidden;
+  background:linear-gradient(180deg,#ffe9f2,#f6ecff 55%,#e8f7ff);
+  position:relative;
+}
+.phone-notch{
+  position:absolute;top:20px;left:50%;transform:translateX(-50%);
+  width:86px;height:20px;border-radius:999px;background:#1f1a24;z-index:3;
+}
+.scene{position:absolute;inset:0;}
+.scene .sun{
+  position:absolute;top:64px;right:30px;width:54px;height:54px;border-radius:50%;
+  background:radial-gradient(circle,#ffe1a8,#ffc86b);filter:blur(.4px);
+  box-shadow:0 0 40px 10px rgba(255,200,107,.5);
+}
+.scene .cloud1,.scene .cloud2{
+  position:absolute;background:#fff;border-radius:999px;opacity:.85;
+}
+.scene .cloud1{width:70px;height:22px;top:96px;left:26px;}
+.scene .cloud2{width:46px;height:16px;top:132px;left:120px;}
+.building{
+  position:absolute;bottom:120px;left:16px;right:16px;height:150px;
+  background:linear-gradient(180deg,#fff2f7,#ffd9e8);
+  border-radius:12px 12px 0 0;
+  box-shadow:inset 0 -10px 0 rgba(255,107,157,.12);
+}
+.building::before{
+  content:"";position:absolute;inset:22px 18px auto 18px;height:60px;
+  background-image:linear-gradient(90deg,transparent 0 12%,#fff 12% 22%,transparent 22% 34%,#fff 34% 44%,transparent 44% 56%,#fff 56% 66%,transparent 66% 78%,#fff 78% 88%,transparent 88%);
+  opacity:.9;
+}
+.building::after{
+  content:"";position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  width:44px;height:38px;border-radius:8px 8px 0 0;background:#ffb6cf;
+}
+.tree{
+  position:absolute;bottom:120px;width:0;height:0;
+  border-left:16px solid transparent;border-right:16px solid transparent;
+  border-bottom:54px solid #b7e4c7;
+}
+.tree.t1{left:34px;}
+.tree.t2{right:38px;border-bottom-color:#9fdcbc;}
+.ground{
+  position:absolute;bottom:0;left:0;right:0;height:120px;
+  background:linear-gradient(180deg,#f5d7e6,#eac2d8);
+  border-radius:0;
+}
+.ground::after{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:2px;height:100%;background:rgba(255,255,255,.45);
+}
+.phone-ui{
+  position:absolute;bottom:14px;left:14px;right:14px;z-index:4;
+  display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(10px);
+  border-radius:16px;padding:10px 12px;
+  border:1px solid rgba(255,255,255,.8);
+}
+.avatar{
+  width:32px;height:32px;border-radius:50%;flex:none;
+  background:conic-gradient(from 210deg,var(--pink),var(--lav),var(--mint),var(--peach),var(--pink));
+  box-shadow:0 0 0 2px #fff;
+}
+.phone-ui .txt{font-size:11px;line-height:1.35;color:var(--ink-soft);}
+.phone-ui .txt b{display:block;font-size:12px;color:var(--ink);}
+.heart{position:absolute;font-size:16px;z-index:4;animation:rise 4s linear infinite;}
+@keyframes rise{
+  0%{transform:translateY(0) scale(.7);opacity:0;}
+  12%{opacity:1;}
+  100%{transform:translateY(-220px) scale(1.15);opacity:0;}
+}
+
+.floating-card{
+  position:absolute;background:#fff;border-radius:18px;padding:14px 18px;
+  box-shadow:0 24px 50px -24px rgba(46,38,51,.35);
+  border:1px solid var(--line);z-index:5;
+}
+.fc1{left:0;top:60px;animation:floaty2 6s ease-in-out infinite;}
+.fc2{left:14px;bottom:80px;animation:floaty2 6s ease-in-out infinite .8s;}
+@keyframes floaty2{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+.floating-card .num{font-size:22px;font-weight:900;color:var(--pink);letter-spacing:-.5px;}
+.floating-card .lbl{font-size:12px;color:var(--ink-soft);}
+.mini-bars{display:flex;align-items:flex-end;gap:4px;height:36px;margin-top:8px;}
+.mini-bars i{width:7px;border-radius:3px;background:linear-gradient(180deg,var(--lav),var(--pink));display:block;}
+
+/* ============ MARQUEE ============ */
+.marquee{
+  background:var(--ink);color:#fff;padding:14px 0;overflow:hidden;
+  display:flex;gap:0;white-space:nowrap;
+}
+.marquee .track{display:inline-flex;gap:44px;padding-right:44px;
+  animation:scrollx 26s linear infinite;font-size:14px;letter-spacing:1px;}
+@keyframes scrollx{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.marquee span{display:inline-flex;align-items:center;gap:10px;opacity:.9;}
+.marquee span::after{content:"✦";color:var(--pink);}
+
+/* ============ SECTION HEAD ============ */
+.sec{padding:88px 0;}
+.sec-head{max-width:660px;margin-bottom:46px;}
+.sec-tag{
+  display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:2px;
+  color:var(--pink);text-transform:uppercase;margin-bottom:12px;
+}
+.sec-head h2{
+  font-size:clamp(28px,3.6vw,42px);line-height:1.22;letter-spacing:-.6px;font-weight:900;
+}
+.sec-head p{color:var(--ink-soft);margin-top:14px;font-size:16px;}
+
+/* ============ ABOUT / 品牌 ============ */
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.about-visual{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  background:linear-gradient(150deg,#ffe6f0,#f0e6ff 60%,#e3f6ff);
+  min-height:380px;display:grid;place-items:center;
+  border:1px solid var(--line);
+}
+.about-visual .big-emoji{font-size:0;}
+.about-visual .paper{
+  width:78%;aspect-ratio:4/3;background:#fff;border-radius:16px;
+  box-shadow:0 30px 60px -30px rgba(46,38,51,.4);
+  padding:22px;display:flex;flex-direction:column;gap:10px;
+  transform:rotate(-2.5deg);
+}
+.about-visual .paper .bar{height:10px;border-radius:6px;background:#f3ecf6;}
+.about-visual .paper .bar.w1{width:70%;background:var(--pink-soft);}
+.about-visual .paper .bar.w2{width:92%;}
+.about-visual .paper .bar.w3{width:54%;}
+.about-visual .paper .bar.w4{width:84%;}
+.about-visual .paper .bar.w5{width:40%;background:var(--lav);opacity:.55;}
+.about-visual .sticker{
+  position:absolute;top:22px;right:22px;background:var(--ink);color:#fff;
+  border-radius:999px;padding:8px 18px;font-size:13px;font-weight:800;
+  transform:rotate(8deg);box-shadow:0 12px 26px -14px var(--ink);
+}
+.about-visual .sticker2{
+  position:absolute;bottom:20px;left:22px;background:#fff;border-radius:14px;
+  padding:10px 16px;font-size:13px;font-weight:700;color:var(--pink);
+  box-shadow:0 12px 26px -18px rgba(46,38,51,.4);border:1px solid var(--pink-soft);
+}
+.about-text h2{margin-bottom:20px;font-size:clamp(26px,3.2vw,38px);line-height:1.25;letter-spacing:-.5px;font-weight:900;}
+.about-text p{color:var(--ink-soft);margin-bottom:16px;font-size:16px;}
+.about-text ul{list-style:none;display:grid;gap:12px;margin-top:24px;}
+.about-text li{
+  display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink);
+}
+.about-text li .ic{
+  flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
+  background:var(--pink-soft);color:var(--pink);font-size:13px;font-weight:900;
+}
+
+/* ============ EPISODES ============ */
+.ep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.ep-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);transition:.32s;display:flex;flex-direction:column;
+}
+.ep-card:hover{transform:translateY(-8px);box-shadow:0 34px 60px -34px rgba(46,38,51,.4);border-color:var(--pink-soft);}
+.ep-thumb{
+  aspect-ratio:16/10;position:relative;overflow:hidden;
+}
+.ep-thumb .cover{position:absolute;inset:0;}
+.ep-thumb .play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:3;
+  background:linear-gradient(180deg,transparent 50%,rgba(46,38,51,.42));
+  opacity:0;transition:.3s;
+}
+.ep-card:hover .play{opacity:1;}
+.play-btn{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:grid;place-items:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);
+}
+.play-btn::after{content:"";width:0;height:0;border-left:15px solid var(--pink);
+  border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px;}
+.ep-dur{
+  position:absolute;right:10px;bottom:10px;z-index:4;background:rgba(46,38,51,.75);
+  color:#fff;font-size:11.5px;padding:3px 9px;border-radius:6px;font-weight:600;
+}
+.ep-cat{
+  position:absolute;left:10px;top:10px;z-index:4;background:rgba(255,255,255,.92);
+  color:var(--pink);font-size:11.5px;font-weight:800;padding:4px 11px;border-radius:999px;
+}
+.ep-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.ep-body h3{font-size:17.5px;line-height:1.4;font-weight:800;letter-spacing:-.2px;}
+.ep-body p{font-size:13.5px;color:var(--ink-soft);flex:1;}
+.ep-meta{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--ink-soft);
+  padding-top:10px;border-top:1px dashed var(--line);}
+.ep-meta .views{display:flex;align-items:center;gap:5px;}
+.dotc{width:5px;height:5px;border-radius:50%;background:var(--pink-soft);}
+
+/* cover art variants */
+.c1{background:radial-gradient(circle at 30% 25%,#ffc2da,#ff8fb6 55%,#ff6b9d);}
+.c2{background:linear-gradient(135deg,#b7e4c7,#a8e6cf 40%,#8ed9e8);}
+.c3{background:linear-gradient(135deg,#d9ccff,#c9b6ff 45%,#ffc2da);}
+.c4{background:linear-gradient(135deg,#ffe1a8,#ffc86b 50%,#ff9f80);}
+.c5{background:linear-gradient(135deg,#a9d6ff,#8ec5ff 50%,#c9b6ff);}
+.c6{background:linear-gradient(135deg,#ffd6e7,#ffb6cf 50%,#ff9ec4);}
+.cover-deco{position:absolute;inset:0;overflow:hidden;}
+.cover-deco .circ{position:absolute;border-radius:50%;background:rgba(255,255,255,.28);}
+.cover-deco .c-a{width:120px;height:120px;top:-30px;right:-24px;}
+.cover-deco .c-b{width:70px;height:70px;bottom:-16px;left:18px;background:rgba(255,255,255,.22);}
+.cover-deco .strip{position:absolute;width:150%;height:22px;background:rgba(255,255,255,.16);
+  top:44%;left:-20%;transform:rotate(-16deg);}
+.cover-deco .txt{position:absolute;left:18px;bottom:16px;color:#fff;font-weight:900;
+  font-size:15px;letter-spacing:.5px;text-shadow:0 4px 14px rgba(0,0,0,.22);}
+
+/* ============ series / tabs ============ */
+.series{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.tab{
+  padding:10px 22px;border-radius:999px;font-size:14px;font-weight:700;
+  border:1.5px solid var(--line);background:#fff;color:var(--ink-soft);
+  cursor:pointer;transition:.25s;
+}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+.tab:hover:not(.active){border-color:var(--pink);color:var(--pink);}
+.tab-panel{display:none;animation:fadeIn .45s ease;}
+.tab-panel.active{display:grid;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.series-grid{grid-template-columns:repeat(2,1fr);gap:24px;}
+.series-item{
+  display:flex;gap:20px;background:var(--cream);border-radius:var(--radius);
+  padding:22px;border:1px solid var(--line);transition:.28s;
+}
+.series-item:hover{background:#fff;box-shadow:0 26px 50px -30px rgba(46,38,51,.35);transform:translateY(-4px);}
+.series-item .thumb{
+  width:130px;height:100px;flex:none;border-radius:14px;position:relative;overflow:hidden;
+}
+.series-item h4{font-size:16.5px;font-weight:800;margin-bottom:6px;letter-spacing:-.2px;}
+.series-item p{font-size:13.5px;color:var(--ink-soft);}
+.series-item .tags{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;}
+.series-item .tags em{
+  font-style:normal;font-size:11.5px;color:var(--pink);background:var(--pink-soft);
+  padding:3px 10px;border-radius:999px;font-weight:700;
+}
+
+/* ============ GALLERY / 日常碎片 ============ */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.gal-item{
+  border-radius:18px;overflow:hidden;position:relative;aspect-ratio:1/1;
+  transition:.3s;cursor:pointer;border:1px solid var(--line);
+}
+.gal-item:hover{transform:scale(1.03);box-shadow:0 22px 44px -26px rgba(46,38,51,.5);}
+.gal-item.tall{grid-row:span 2;aspect-ratio:auto;}
+.gal-deco{position:absolute;inset:0;}
+.gal-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:14px;
+  background:linear-gradient(0deg,rgba(46,38,51,.62),transparent);
+  color:#fff;font-size:12.5px;font-weight:700;
+  transform:translateY(100%);transition:.3s;
+}
+.gal-item:hover .gal-cap{transform:translateY(0);}
+.g1{background:linear-gradient(135deg,#ffe1ec,#ffb6cf);}
+.g2{background:linear-gradient(135deg,#e0f2ff,#a9d6ff);}
+.g3{background:linear-gradient(135deg,#e8ffe8,#a8e6cf);}
+.g4{background:linear-gradient(135deg,#f0e8ff,#c9b6ff);}
+.g5{background:linear-gradient(135deg,#fff4e0,#ffd9a0);}
+.g6{background:linear-gradient(135deg,#ffe4ef,#ffa6c9);}
+.g7{background:linear-gradient(135deg,#e6f7ff,#8ed9e8);}
+.gal-deco .gshape{position:absolute;border-radius:50%;background:rgba(255,255,255,.35);}
+.gal-deco .gs1{width:90px;height:90px;top:-24px;right:-18px;}
+.gal-deco .gs2{width:56px;height:56px;bottom:20px;left:16px;background:rgba(255,255,255,.28);}
+.gal-deco .gr{position:absolute;left:18px;top:18px;right:18px;height:12px;border-radius:6px;background:rgba(255,255,255,.4);}
+.gal-deco .gr.two{top:38px;width:44%;}
+.gal-deco .gemoji{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-size:0;
+}
+
+/* ============ NUMBERS ============ */
+.numbers{background:var(--ink);color:#fff;padding:70px 0;}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.num-grid b{display:block;font-size:clamp(30px,4vw,46px);font-weight:900;letter-spacing:-1px;
+  background:linear-gradient(120deg,#fff,#ffb6cf);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.num-grid s{text-decoration:none;font-size:13.5px;color:rgba(255,255,255,.62);display:block;margin-top:6px;}
+
+/* ============ COMMUNITY ============ */
+.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;}
+.comm-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;margin-bottom:18px;transition:.28s;
+}
+.comm-card:hover{box-shadow:0 26px 50px -32px rgba(46,38,51,.35);transform:translateY(-3px);}
+.comm-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.comm-ava{
+  width:42px;height:42px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-weight:900;color:#fff;font-size:15px;
+}
+.comm-head .who b{display:block;font-size:14.5px;font-weight:800;}
+.comm-head .who s{text-decoration:none;font-size:12px;color:var(--ink-soft);}
+.comm-card p{font-size:14px;color:var(--ink-soft);line-height:1.75;}
+.comm-foot{display:flex;gap:18px;margin-top:14px;font-size:12.5px;color:var(--ink-soft);}
+.comm-foot span{display:flex;align-items:center;gap:5px;}
+
+.join-box{
+  background:linear-gradient(150deg,#fff0f6,#f3ecff 55%,#e8f7ff);
+  border-radius:var(--radius);padding:38px 32px;border:1px solid var(--line);
+  position:sticky;top:90px;
+}
+.join-box h3{font-size:24px;font-weight:900;letter-spacing:-.4px;margin-bottom:12px;}
+.join-box p{font-size:14.5px;color:var(--ink-soft);margin-bottom:22px;}
+.form-row{display:flex;flex-direction:column;gap:12px;margin-bottom:16px;}
+.form-row input,.form-row select{
+  padding:13px 16px;border-radius:12px;border:1.5px solid rgba(46,38,51,.14);
+  font-size:14px;font-family:inherit;background:#fff;outline:none;transition:.2s;color:var(--ink);
+}
+.form-row input:focus,.form-row select:focus{border-color:var(--pink);box-shadow:0 0 0 4px rgba(255,107,157,.12);}
+.join-btn{
+  width:100%;padding:14px;border-radius:12px;border:none;cursor:pointer;
+  background:var(--ink);color:#fff;font-size:15px;font-weight:800;font-family:inherit;
+  transition:.26s;
+}
+.join-btn:hover{background:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow);}
+.join-note{font-size:12px;color:var(--ink-soft);margin-top:12px;text-align:center;}
+.msg{font-size:13px;color:#1a8f5f;font-weight:700;margin-top:10px;text-align:center;display:none;}
+
+/* ============ FAQ ============ */
+.faq{background:#fff;border-top:1px solid var(--line);}
+.faq-list{display:grid;gap:14px;max-width:880px;}
+.faq-item{
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--cream);
+  transition:.25s;
+}
+.faq-item.open{background:#fff;border-color:var(--pink-soft);box-shadow:0 20px 44px -30px rgba(46,38,51,.3);}
+.faq-q{
+  width:100%;text-align:left;padding:20px 24px;background:none;border:none;
+  font-size:15.5px;font-weight:800;color:var(--ink);cursor:pointer;font-family:inherit;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.faq-q .pm{
+  flex:none;width:24px;height:24px;border-radius:50%;background:var(--pink-soft);
+  color:var(--pink);display:grid;place-items:center;font-size:16px;font-weight:900;
+  transition:.3s;
+}
+.faq-item.open .pm{transform:rotate(45deg);background:var(--pink);color:#fff;}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .35s ease;
+}
+.faq-a p{padding:0 24px 22px;font-size:14px;color:var(--ink-soft);line-height:1.8;}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:#fff;padding:64px 0 32px;}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px;}
+.foot-brand .logo{color:#fff;margin-bottom:14px;}
+.foot-brand p{font-size:13.5px;color:rgba(255,255,255,.6);max-width:300px;line-height:1.8;}
+.foot-col h5{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px;}
+.foot-col a{display:block;font-size:14px;color:rgba(255,255,255,.78);margin-bottom:11px;transition:.2s;}
+.foot-col a:hover{color:var(--pink);transform:translateX(3px);}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:24px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12.5px;color:rgba(255,255,255,.45);
+}
+.socials{display:flex;gap:10px;}
+.socials span{
+  width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);
+  display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;
+  transition:.24s;cursor:pointer;
+}
+.socials span:hover{background:var(--pink);transform:translateY(-3px);}
+
+/* ============ REVEAL ANIM ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .hero-visual{height:420px;max-width:400px;margin:0 auto;width:100%;}
+  .about-grid{grid-template-columns:1fr;gap:36px;}
+  .ep-grid{grid-template-columns:repeat(2,1fr);}
+  .gal{grid-template-columns:repeat(3,1fr);}
+  .num-grid{grid-template-columns:repeat(2,1fr);gap:36px;}
+  .community-grid{grid-template-columns:1fr;gap:32px;}
+  .join-box{position:static;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:720px){
+  .nav-links{display:none;}
+  .hero{padding:44px 0 30px;}
+  .hero-stats{gap:22px;}
+  .sec{padding:60px 0;}
+  .ep-grid{grid-template-columns:1fr;}
+  .series-grid{grid-template-columns:1fr;}
+  .gal{grid-template-columns:repeat(2,1fr);}
+  .gal-item.tall{grid-row:span 1;aspect-ratio:1/1;}
+  .series-item{flex-direction:column;}
+  .series-item .thumb{width:100%;height:130px;}
+  .foot-grid{grid-template-columns:1fr;gap:30px;}
+  .num-grid{grid-template-columns:repeat(2,1fr);}
+  .about-visual{min-height:300px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="logo"><span class="dot">苏</span>s浪校花苏苏的日常</div>
+    <nav class="nav-links">
+      <a href="#about">关于苏苏</a>
+      <a href="#episodes">最新视频</a>
+      <a href="#series">系列合集</a>
+      <a href="#gallery">日常碎片</a>
+      <a href="#community">粉丝社区</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a href="#community" class="nav-cta">加入我们</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-left reveal">
+      <div class="eyebrow"><span class="live"></span>每周三、周六晚 8 点更新</div>
+      <h1>把青春拍成<span class="hl">连续剧</span><br>苏苏的校园日常</h1>
+      <p class="lead">这里是 s浪校花苏苏的日常，一个记录真实校园生活的视频品牌。从早八的奔跑、图书馆的午后，到社团排练与宿舍夜谈，我们用镜头把平凡日子拍成值得回看的故事。</p>
+      <div class="hero-actions">
+        <a href="#episodes" class="btn btn-primary">▶ 观看最新一期</a>
+        <a href="#series" class="btn btn-ghost">浏览系列合集</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>326</b><s>已更新视频</s></div>
+        <div><b>48.6万</b><s>粉丝一起追更</s></div>
+        <div><b>1200万+</b><s>累计播放</s></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="floating-card fc1">
+        <div class="num">98.2%</div>
+        <div class="lbl">粉丝好评率</div>
+      </div>
+      <div class="floating-card fc2">
+        <div class="lbl">近 7 日播放趋势</div>
+        <div class="mini-bars">
+          <i style="height:14px"></i><i style="height:24px"></i><i style="height:18px"></i>
+          <i style="height:32px"></i><i style="height:26px"></i><i style="height:36px"></i>
+          <i style="height:22px"></i>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="scene">
+            <div class="sun"></div>
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="building"></div>
+            <div class="tree t1"></div>
+            <div class="tree t2"></div>
+            <div class="ground"></div>
+            <span class="heart" style="left:40px;bottom:150px;animation-delay:0s">♥</span>
+            <span class="heart" style="left:100px;bottom:150px;animation-delay:1.4s">♥</span>
+            <span class="heart" style="left:170px;bottom:150px;animation-delay:2.6s">♥</span>
+          </div>
+          <div class="phone-ui">
+            <div class="avatar"></div>
+            <div class="txt"><b>苏苏</b>下课啦，今天也拍了点好看的</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="track">
+    <span>校园Vlog</span><span>真实记录</span><span>青春故事</span><span>成长日常</span>
+    <span>社团活动</span><span>学习打卡</span><span>宿舍生活</span><span>城市漫游</span>
+    <span>校园Vlog</span><span>真实记录</span><span>青春故事</span><span>成长日常</span>
+    <span>社团活动</span><span>学习打卡</span><span>宿舍生活</span><span>城市漫游</span>
+  </div>
+</div>
+
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="paper">
+        <div class="bar w1"></div>
+        <div class="bar w2"></div>
+        <div class="bar w3"></div>
+        <div class="bar w4"></div>
+        <div class="bar w5"></div>
+        <div class="bar w2"></div>
+        <div class="bar w3"></div>
+        <div class="bar w1"></div>
+      </div>
+      <div class="sticker">SU SU</div>
+      <div class="sticker2">✦ 真实才是最好的滤镜</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="sec-tag">关于这个品牌</div>
+      <h2>不只是校花标签<br>更是一段被认真记录的青春</h2>
+      <p>s浪校花苏苏的日常，起源于一台二手微单和一个再普通不过的午后。苏苏把镜头对准自己的课桌、食堂、操场和室友，没想到这些琐碎画面让许多同龄人看见了熟悉的自己。</p>
+      <p>我们没有剧本化的表演，也没有精心搭建的布景。拍摄团队由苏苏和两位同班同学组成，设备从一台相机慢慢变成三机位，唯一没变的是「先生活，后拍摄」的原则。</p>
+      <ul>
+        <li><span class="ic">01</span><div><b>真实日常优先</b><br>每期视频都来自真实发生的校园片段，拒绝刻意编排的桥段。</div></li>
+        <li><span class="ic">02</span><div><b>内容持续更新</b><br>固定双更节奏，节假日和考试周另有特别企划。</div></li>
+        <li><span class="ic">03</span><div><b>与观众共同成长</b><br>选题来自评论区，粉丝故事也会被拍进正片。</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="episodes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Latest Episodes</div>
+      <h2>最新一期，正在被追更</h2>
+      <p>每一期都是一段完整的校园切片。你可以从任意一期开始，也不妨从最热的那一期进入苏苏的日常。</p>
+    </div>
+    <div class="ep-grid">
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c1"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">早八生存实录</div>
+          </div>
+          <span class="ep-cat">日常Vlog</span>
+          <span class="ep-dur">12:46</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>早八生存实录：从起床到冲进教室的第 47 分钟</h3>
+          <p>冬天的被窝有多难离开，早八的走廊就有多热闹。这一期，苏苏把闹钟按了六次。</p>
+          <div class="ep-meta"><span class="views">▶ 86.4万次播放</span><span>2024-11-09</span></div>
+        </div>
+      </article>
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c2"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">图书馆的午后</div>
+          </div>
+          <span class="ep-cat">学习打卡</span>
+          <span class="ep-dur">09:18</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>图书馆靠窗第四排，是我整个学期最喜欢的位置</h3>
+          <p>阳光、翻书声、一杯放凉的拿铁。记录一个安静的下午，也聊聊怎么熬过期末周。</p>
+          <div class="ep-meta"><span class="views">▶ 52.1万次播放</span><span>2024-11-06</span></div>
+        </div>
+      </article>
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c3"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">社团招新夜</div>
+          </div>
+          <span class="ep-cat">社团活动</span>
+          <span class="ep-dur">15:02</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>社团招新夜：我在台上唱跑调了，但全场都在鼓掌</h3>
+          <p>从彩排的手忙脚乱到正式演出的灯光亮起，这一晚属于所有鼓起勇气站上台的人。</p>
+          <div class="ep-meta"><span class="views">▶ 71.8万次播放</span><span>2024-11-02</span></div>
+        </div>
+      </article>
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c4"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">食堂的隐藏菜单</div>
+          </div>
+          <span class="ep-cat">美食探索</span>
+          <span class="ep-dur">11:30</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>食堂阿姨偷偷告诉我的隐藏菜单，一周吃了四次</h3>
+          <p>三号窗口的加料规则、二楼的限时小炒、还有那家永远排队的麻辣烫。</p>
+          <div class="ep-meta"><span class="views">▶ 64.3万次播放</span><span>2024-10-28</span></div>
+        </div>
+      </article>
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c5"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">雨天宿舍夜谈</div>
+          </div>
+          <span class="ep-cat">宿舍生活</span>
+          <span class="ep-dur">18:24</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>雨天的宿舍夜谈：我们聊了聊三年后的自己</h3>
+          <p>关灯之后的话题总是特别真诚。这一期没有脚本，只有四个女生和一场夜雨。</p>
+          <div class="ep-meta"><span class="views">▶ 93.6万次播放</span><span>2024-10-24</span></div>
+        </div>
+      </article>
+
+      <article class="ep-card reveal">
+        <div class="ep-thumb">
+          <div class="cover c6"></div>
+          <div class="cover-deco">
+            <div class="circ c-a"></div><div class="circ c-b"></div>
+            <div class="strip"></div>
+            <div class="txt">周末城市漫游</div>
+          </div>
+          <span class="ep-cat">城市漫游</span>
+          <span class="ep-dur">14:07</span>
+          <div class="play"><div class="play-btn"></div></div>
+        </div>
+        <div class="ep-body">
+          <h3>周末城市漫游：坐错公交之后，遇见了最好看的日落</h3>
+          <p>没有攻略的一天，反而收获最多。老巷子、旧书店和一家只在傍晚营业的糖水铺。</p>
+          <div class="ep-meta"><span class="views">▶ 47.9万次播放</span><span>2024-10-20</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec series" id="series">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Series Collection</div>
+      <h2>四个系列，四种打开方式</h2>
+      <p>按兴趣挑选入口，每一系列都有独立的主线节奏，适合从第一期顺着看下去。</p>
+    </div>
+
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="t1">校园日常</button>
+      <button class="tab" data-tab="t2">学习成长</button>
+      <button class="tab" data-tab="t3">社团与活动</button>
+      <button class="tab" data-tab="t4">假期企划</button>
+    </div>
+
+    <div class="tab-panel active series-grid" id="t1">
+      <div class="series-item">
+        <div class="thumb c1"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《早八生存实录》系列</h4><p>记录每一个挣扎起床的清晨，也记录那些赶在铃响前冲进教室的瞬间。</p>
+        <div class="tags"><em>已更 42 期</em><em>持续更新中</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c2"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《食堂打卡地图》系列</h4><p>把校园周边与食堂窗口吃一遍，用最朴素的方式完成一份美食地图。</p>
+        <div class="tags"><em>已更 28 期</em><em>周更</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c3"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《宿舍夜谈》系列</h4><p>熄灯后的话题现场，聊成长、聊选择、聊那些白天不太说出口的心事。</p>
+        <div class="tags"><em>已更 19 期</em><em>双周更</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c5"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《城市漫游》系列</h4><p>从学校出发，用一天时间走进城市的街巷，找到那些被忽略的小角落。</p>
+        <div class="tags"><em>已更 23 期</em><em>月更</em></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel series-grid" id="t2">
+      <div class="series-item">
+        <div class="thumb c4"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《期末周生存指南》系列</h4><p>复习计划、番茄钟实测、图书馆占座心得，以及如何不被焦虑拖走。</p>
+        <div class="tags"><em>已更 16 期</em><em>季节性</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c2"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《自习室的 90 分钟》</h4><p>无对白、纯环境音的沉浸式学习陪伴视频，适合当作背景声一起专注。</p>
+        <div class="tags"><em>已更 34 期</em><em>周更</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c6"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《时间管理实验》系列</h4><p>把各种学习方法真实上手两周，然后诚实地告诉你哪些有效、哪些是噱头。</p>
+        <div class="tags"><em>已更 12 期</em><em>月更</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c1"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《采访身边的同学》</h4><p>把镜头转向他人，听听不同专业的人如何理解自己的大学生活。</p>
+        <div class="tags"><em>已更 21 期</em><em>双周更</em></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel series-grid" id="t3">
+      <div class="series-item">
+        <div class="thumb c3"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《社团招新夜》系列</h4><p>从彩排到正式演出，记录每一个站上台前的紧张和谢幕后的欢呼。</p>
+        <div class="tags"><em>已更 9 期</em><em>学期更新</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c5"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《校园活动直击》</h4><p>运动会、毕业季、迎新晚会，用第一视角带你看完整个现场。</p>
+        <div class="tags"><em>已更 27 期</em><em>事件驱动</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c1"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《幕后花絮》系列</h4><p>拍摄失误、设备翻车、剪辑到凌晨的崩溃现场，全部如实保留。</p>
+        <div class="tags"><em>已更 18 期</em><em>不定期</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c2"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《志愿者的一天》</h4><p>跟着社团走进社区和公益现场，记录那些安静但重要的时刻。</p>
+        <div class="tags"><em>已更 7 期</em><em>季度更新</em></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel series-grid" id="t4">
+      <div class="series-item">
+        <div class="thumb c4"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《寒暑假回家记》</h4><p>从宿舍到老家，记录长途返乡路上那些真实又琐碎的细节。</p>
+        <div class="tags"><em>已更 11 期</em><em>假期更新</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c6"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《一个人的短途旅行》</h4><p>背着相机去邻近城市待两天，聊聊独自出发这件事。</p>
+        <div class="tags"><em>已更 14 期</em><em>假期更新</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c3"><div class="cover-deco"><div class="circ c-a"></div><div class="strip"></div></div></div>
+        <div><h4>《毕业季特别企划》</h4><p>把四年里没来得及说的话，剪成一份送给彼此的礼物。</p>
+        <div class="tags"><em>已更 5 期</em><em>年度特别篇</em></div></div>
+      </div>
+      <div class="series-item">
+        <div class="thumb c5"><div class="cover-deco"><div class="circ c-b"></div><div class="strip"></div></div></div>
+        <div><h4>《新年七日记录》</h4><p>连续七天，每天一支短片，把假期的松弛感完整保留下来。</p>
+        <div class="tags"><em>已更 4 季</em><em>春节更新</em></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Daily Fragments</div>
+      <h2>日常碎片，也是正片的一部分</h2>
+      <p>不是每一帧都能进正片。这些没被剪进视频的画面，同样构成了苏苏的日常。</p>
+    </div>
+    <div class="gal">
+      <div class="gal-item g1 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">清晨六点半的操场</div>
+      </div>
+      <div class="gal-item g2 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">雨后的教学楼走廊</div>
+      </div>
+      <div class="gal-item g3 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">阳台上的小盆栽</div>
+      </div>
+      <div class="gal-item g4 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">排练室的最后一盏灯</div>
+      </div>
+      <div class="gal-item g5 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">食堂三号窗口的加料</div>
+      </div>
+      <div class="gal-item g6 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">宿舍窗台上的便利贴</div>
+      </div>
+      <div class="gal-item g7 reveal">
+        <div class="gal-deco"><div class="gshape gs1"></div><div class="gshape gs2"></div><div class="gr"></div><div class="gr two"></div></div>
+        <div class="gal-cap">傍晚六点的天桥</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div class="wrap">
+    <div class="num-grid">
+      <div class="reveal"><b>326</b><s>已发布视频</s></div>
+      <div class="reveal"><b>1200万+</b><s>累计播放次数</s></div>
+      <div class="reveal"><b>48.6万</b><s>全平台关注</s></div>
+      <div class="reveal"><b>4年</b><s>持续记录时间</s></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="community">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Community</div>
+      <h2>这里不只是视频，还有一个社区</h2>
+      <p>评论区常常比正片还热闹。很多选题来自观众留言，也有不少人在这里找到了同校的伙伴。</p>
+    </div>
+
+    <div class="community-grid">
+      <div class="community-left reveal">
+        <div class="comm-card">
+          <div class="comm-head">
+            <div class="comm-ava" style="background:linear-gradient(135deg,#ff6b9d,#ff9ec4)">林</div>
+            <div class="who"><b>林同学</b><s>来自 3 天前</s></div>
+          </div>
+          <p>看完早八那一期，突然觉得自己的清晨也没那么难熬了。现在每天出门前都会想起苏苏按掉第六个闹钟的样子，然后笑着爬起来。</p>
+          <div class="comm-foot"><span>♥ 2.4万</span><span>💬 862</span><span>↗ 分享</span></div>
+        </div>
+        <div class="comm-card">
+          <div class="comm-head">
+            <div class="comm-ava" style="background:linear-gradient(135deg,#a8e6cf,#8ed9e8)">陈</div>
+            <div class="who"><b>陈小满</b><s>来自 1 周前</s></div>
+          </div>
+          <p>宿舍夜谈那期真的看到眼眶发热。我们宿舍也常常熄灯之后聊人生，只是从来没想过把它录下来。谢谢苏苏替我们保存了这份记忆。</p>
+          <div class="comm-foot"><span>♥ 1.8万</span><span>💬 1.1k</span><span>↗ 分享</span></div>
+        </div>
+        <div class="comm-card">
+          <div class="comm-head">
+            <div class="comm-ava" style="background:linear-gradient(135deg,#c9b6ff,#ffb6cf)">周</div>
+            <div class="who"><b>周末不加班</b><s>来自 2 周前</s></div>
+          </div>
+          <p>本来只是随便点开一期下饭，结果一口气看了六期。剪辑很干净，没有夸张的音效，反而更容易看进去。希望系列能一直更新下去。</p>
+          <div class="comm-foot"><span>♥ 9652</span><span>💬 437</span><span>↗ 分享</span></div>
+        </div>
+      </div>
+
+      <div class="community-right reveal">
+        <div class="join-box">
+          <h3>订阅苏苏的更新提醒</h3>
+          <p>留下邮箱，每期新视频上线时我们会第一时间通知你，绝不发送无关内容。</p>
+          <form id="joinForm">
+            <div class="form-row">
+              <input type="text" id="nickname" placeholder="你的昵称" required maxlength="20">
+              <input type="email" id="email" placeholder="你的邮箱地址" required>
+              <select id="interest">
+                <option value="日常">我最想看：校园日常</option>
+                <option value="学习">我最想看：学习成长</option>
+                <option value="社团">我最想看：社团与活动</option>
+                <option value="假期">我最想看：假期企划</option>
+              </select>
+            </div>
+            <button type="submit" class="join-btn">订阅更新提醒</button>
+            <div class="msg" id="formMsg">✦ 订阅成功，期待在下一期的评论区见到你！</div>
+          </form>
+          <div class="join-note">已加入 12,846 位同学的订阅列表</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">FAQ</div>
+      <h2>关于 s浪校花苏苏的日常</h2>
+      <p>一些被反复问到的内容，整理在这里，方便你快速了解这个品牌。</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">这个账号是真实的学生在更新吗？<span class="pm">+</span></button>
+        <div class="faq-a" style="max-height:200px"><p>是的。苏苏目前仍是在校学生，视频中的场景、人物和事件均来自真实校园生活。拍摄与剪辑由苏苏和两位同学共同完成，团队规模很小，但内容全部原创。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">更新频率是怎样的？<span class="pm">+</span></button>
+        <div class="faq-a"><p>常规节奏为每周三、周六晚 8 点更新，考试周可能顺延，假期会推出特别企划。关注订阅提醒或粉丝社区公告，可以第一时间收到更新通知。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">可以用什么设备观看？<span class="pm">+</span></button>
+        <div class="faq-a"><p>全平台支持，手机、平板、电脑与电视端均可观看，画质最高支持 4K。建议在 Wi-Fi 环境下观看完整系列合集，体验更连贯。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">接受合作或投稿吗？<span class="pm">+</span></button>
+        <div class="faq-a"><p>接受与校园、学习、生活方式相关的品牌合作，但所有合作内容会明确标注。粉丝故事投稿长期开放，被选中的故事会进入正片拍摄计划。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">视频素材可以转载吗？<span class="pm">+</span></button>
+        <div class="faq-a"><p>欢迎分享链接，但请勿搬运或二次剪辑后用于商业用途。如需转载片段，请通过页面底部的联系方式与我们沟通，我们会尽快回复。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><span class="dot">苏</span>s浪校花苏苏的日常</div>
+        <p>用镜头记录真实校园生活，把平凡日子拍成值得回看的故事。一个持续更新的校园视频品牌。</p>
+        <div class="socials" style="margin-top:20px">
+          <span>V</span><span>B</span><span>D</span><span>X</span>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>内容</h5>
+        <a href="#episodes">最新视频</a>
+        <a href="#series">系列合集</a>
+        <a href="#gallery">日常碎片</a>
+        <a href="#about">关于苏苏</a>
+      </div>
+      <div class="foot-col">
+        <h5>社区</h5>
+        <a href="#community">加入订阅</a>
+        <a href="#community">粉丝留言</a>
+        <a href="#faq">常见问题</a>
+        <a href="#faq">投稿说明</a>
+      </div>
+      <div class="foot-col">
+        <h5>联系</h5>
+        <a href="#community">品牌合作</a>
+        <a href="#community">媒体咨询</a>
+        <a href="#community">内容授权</a>
+        <a href="#community">反馈建议</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 s浪校花苏苏的日常 · 保留所有权利</span>
+      <span>本页面内容为品牌展示用途</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 平滑锚点偏移
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      if(id.length>1){
+        var el=document.querySelector(id);
+        if(el){
+          e.preventDefault();
+          var top=el.getBoundingClientRect().top+window.pageYOffset-70;
+          window.scrollTo({top:top,behavior:'smooth'});
+        }
+      }
+    });
+  });
+
+  // 系列切换
+  var tabs=document.querySelectorAll('.tab');
+  var panels=document.querySelectorAll('.tab-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      tab.classList.add('active');
+      var target=document.getElementById(tab.dataset.tab);
+      if(target){target.classList.add('active');}
+    });
+  });
+
+  // FAQ 手风琴
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q=item.querySelector('.faq-q');
+    var a=item.querySelector('.faq-a');
+    q.addEventListener('click',function(){
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(other){
+        other.classList.remove('open');
+        var oa=other.querySelector('.faq-a');
+        if(oa){oa.style.maxHeight='0px';}
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight=a.scrollHeight+'px';
+      }
+    });
+  });
+  // 初始化已打开的 FAQ
+  var openItem=document.querySelector('.faq-item.open .faq-a');
+  if(openItem){openItem.style.maxHeight=openItem.scrollHeight+'px';}
+
+  // 滚动显现
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+
+  // 订阅表单
+  var form=document.getElementById('joinForm');
+  var msg=document.getElementById('formMsg');
+  var note=document.querySelector('.join-note');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var nick=document.getElementById('nickname').value.trim();
+      var mail=document.getElementById('email').value.trim();
+      if(!nick||!mail){return;}
+      msg.style.display='block';
+      msg.textContent='✦ '+nick+'，订阅成功！我们会在下一期上线时通知你。';
+      if(note){note.textContent='已加入 12,847 位同学的订阅列表';}
+      form.querySelector('.join-btn').textContent='已订阅 ✓';
+      setTimeout(function(){
+        form.querySelector('.join-btn').textContent='订阅更新提醒';
+      },2600);
+      form.reset();
+    });
+  }
+
+  // 键盘无障碍：tab 支持方向键
+  var tabList=Array.prototype.slice.call(tabs);
+  tabList.forEach(function(tab,idx){
+    tab.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+        e.preventDefault();
+        var next=(idx+(e.key==='ArrowRight'?1:tabList.length-1))%tabList.length;
+        tabList[next].focus();
+        tabList[next].click();
+      }
+    });
+  });
+})();
+</script>
+</body>
+  </html>
